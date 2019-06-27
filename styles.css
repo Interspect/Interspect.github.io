@@ -1,13 +1,13 @@
 body {
   background: #FAF5F0;
-  overflow:hidden;
+  margin: 0;
+  overflow: hidden;
 }
 html {
   overflow-y: scroll;
 }
 
 .header {
-  /* z-index: 1; */
   position: relative;
 }
 .download {
@@ -24,7 +24,6 @@ html {
   overflow: visible;
   width: 100%;
   height: 313px;
-  /* background: #D4E6F7; */
   opacity: 0.3;
   background-image: linear-gradient(186deg, #4299EA 0%, #D4E6F7 100%);
   z-index: -1;
@@ -54,30 +53,56 @@ html {
 
 
 .button {
-  background-color: #1F4E7A; /* Green */
+  background-color: #1F4E7A;
   border: none;
+  border-radius: 3px;
   color: #D4E6F7;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.325em;
+  margin: 4px 100px;
+  min-width: max-content;
   padding: 15px 24px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 2%;
-  font-size: 26px;
-  margin: 4px 100px;
-  cursor: pointer;
-  min-width: max-content;
 }
 
 .hero {
-  margin-left: 10%;
+  margin-left: 10vw;
 }
-.beta-badge {
-  margin-left: 11%;
+
+main {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 4em auto 2em 0;
+  width: fit-content;
+}
+
+header img {
+  max-width: 48px;
+}
+
+header h1 {
+  color: #3B332B;
+  font-size: 2.5em;
+  margin: 0.5em auto 0.825em;
+}
+
+main p {
+  color: #3B332B;
+  font-size: 1.125em;
+  max-width: 36em;
+  line-height: 1.475em;
 }
 
 .description-wrapper {
   display: flex;
-  margin: 15px;
+  margin: 15px auto;
   justify-content: space-between;
 }
 
@@ -93,32 +118,58 @@ html {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin-top: 4%;
+  margin-top: 4em;
+}
+
+.column img {
+  max-width: 32px;
+}
+
+.column h2 {
+  color: #3B332B;
+  font-size: 1.25em;
 }
 
 .performance-column {
   height: 100px;
-  max-width: 52%;
+  max-width: 24em;
 }
 
 .batch-column {
   height: 100px;
-  max-width: 52%;
+  max-width: 24em;
 }
 
 .mockup-column {
   height: 100px;
-  max-width: 52%;
+  max-width: 24em;
 }
 .center {
   margin-left: 10%;
   margin-bottom: 22%;
 }
 .footer {
+  color: #70665C;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 15%;
-  margin-left: 10%;
+  margin-left: 10vw;
 }
 
+.footer h2 {
+  font-size: 1.25em;
+}
+
+.footer a {
+  color: #70665C;
+  border-bottom: 1px solid #CFCCC9;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #3B332B;
+  border-bottom: 1px solid #3B332B;
+}
 
 
 /* 
@@ -151,7 +202,6 @@ html {
   }
   .download {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     margin-top: 114%;
     position: inherit;
@@ -162,6 +212,10 @@ html {
     position: absolute;
     bottom: 50%;
     top: 17%;
+  }
+
+  .column {
+    display: none;
   }
   
  }
