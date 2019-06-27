@@ -66,6 +66,9 @@ body {
   min-width: max-content;
 }
 
+.hero {
+  margin-left: 10%;
+}
 
 .description-wrapper {
   display: flex;
@@ -85,18 +88,29 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  margin-top: 4%;
 }
 
 .performance-column {
   height: 100px;
+  max-width: 52%;
 }
 
 .batch-column {
   height: 100px;
+  max-width: 52%;
 }
 
 .mockup-column {
   height: 100px;
+  max-width: 52%;
+}
+.center {
+  margin-left: 10%;
+}
+.footer {
+  margin-top: 15%;
+  margin-left: 10%;
 }
 
 
