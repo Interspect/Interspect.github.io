@@ -11,6 +11,7 @@ html {
   position: relative;
 }
 .download {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -60,11 +61,15 @@ html {
   cursor: pointer;
   display: inline-block;
   font-size: 1.325em;
-  margin: 4px 100px;
+  margin: 0 2em;
   min-width: max-content;
   padding: 15px 24px;
   text-align: center;
   text-decoration: none;
+}
+
+.download span {
+  margin-right: 10vw;
 }
 
 .hero {
@@ -222,6 +227,10 @@ footer a:hover {
     flex-direction: column;
   }
 
+  .download {
+    flex-direction: column;
+  }
+
 }
 
 /* 
@@ -238,12 +247,19 @@ footer a:hover {
   .header .skew:before { 
     transform: skewY(-12deg);
   }
+
   .download {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    justify-self: center;
     margin-top: 114%;
     position: inherit;
-    justify-self: center;
+  }
+
+  .download span {
+    margin: 0;
+    margin-top: 1em;
   }
 
   .hero {
