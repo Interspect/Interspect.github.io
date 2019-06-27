@@ -23,7 +23,7 @@ html {
   bottom: -250%;
   overflow: visible;
   width: 100%;
-  height: 313px;
+  height: 900px;
   opacity: 0.3;
   background-image: linear-gradient(186deg, #4299EA 0%, #D4E6F7 100%);
   z-index: -1;
@@ -90,7 +90,7 @@ header img {
 header h1 {
   color: #3B332B;
   font-size: 2.5em;
-  margin: 0.5em auto 0.825em;
+  margin: 0 auto 0.825em;
 }
 
 main p {
@@ -98,6 +98,45 @@ main p {
   font-size: 1.125em;
   max-width: 36em;
   line-height: 1.475em;
+}
+
+a.secondary-cta {
+  border-bottom: 2px solid #EDE6DE;
+  color: #70665C;
+  display: inline-block;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 2.5em auto;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a.secondary-cta:hover {
+  border-bottom-color: #3B332B;
+  color: #3B332B;
+  transform: translateY(-2px);
+}
+
+.features {
+  display: flex;
+  margin-right: 10vw;
+  justify-content: flex-start;
+}
+
+.features article {
+  margin-right: 2.875em;
+}
+
+.features article header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.features h2 {
+  color: #3B332B;
+  margin: 0.75em auto 0;
 }
 
 .description-wrapper {
@@ -121,7 +160,7 @@ main p {
   margin-top: 4em;
 }
 
-.column img {
+article header img {
   max-width: 32px;
 }
 
@@ -144,29 +183,30 @@ main p {
   height: 100px;
   max-width: 24em;
 }
+
 .center {
-  margin-left: 10%;
-  margin-bottom: 22%;
+  margin-left: 10vw;
+  /* margin-bottom: 22%; */
 }
-.footer {
+
+footer {
   color: #70665C;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-top: 15%;
-  margin-left: 10vw;
+  margin: 8em auto 0.5em 10vw;
 }
 
-.footer h2 {
-  font-size: 1.25em;
+footer h2 {
+  font-size: 1.5em;
 }
 
-.footer a {
+footer a {
   color: #70665C;
   border-bottom: 1px solid #CFCCC9;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-.footer a:hover {
+footer a:hover {
   color: #3B332B;
   border-bottom: 1px solid #3B332B;
 }
@@ -178,11 +218,9 @@ main p {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  /* body {
-    background: #FAF5F0;
-  
-  } */
+  .features {
+    flex-direction: column;
+  }
 
 }
 
@@ -214,8 +252,18 @@ main p {
     top: 17%;
   }
 
-  .column {
+  .features {
     display: none;
+  }
+
+  main p, footer p {
+    margin-right: 2em;
+    font-size: 1.25em;
+    hyphens: auto;
+  }
+
+  footer p {
+    line-height: 1.5em;
   }
   
  }
