@@ -2,7 +2,9 @@ body {
   background: #FAF5F0;
   overflow:hidden;
 }
-
+html {
+  overflow-y: scroll;
+}
 
 .header {
   /* z-index: 1; */
@@ -118,10 +120,6 @@ body {
 
 
 
-
-
-
-
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -130,8 +128,8 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
   
   /* body {
-    background: green;
-    overflow:hidden;
+    background: #FAF5F0;
+  
   } */
 
 }
