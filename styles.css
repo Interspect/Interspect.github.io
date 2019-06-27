@@ -66,6 +66,45 @@ body {
   min-width: max-content;
 }
 
+
+some-page-wrapper {
+  display: flex;
+  margin: 15px;
+  background-color: red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.performance-column {
+  height: 100px;
+}
+
+.batch-column {
+  height: 100px;
+}
+
+.mockup-column {
+  height: 100px;
+}
+
+
+
+
+
+
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
