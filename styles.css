@@ -1,3 +1,112 @@
 body {
   background: #FAF5F0;
+  overflow:hidden;
 }
+
+
+.header {
+  /* z-index: 1; */
+  position: relative;
+}
+.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -250%;
+  overflow: visible;
+  width: 100%;
+  height: 313px;
+  /* background: #D4E6F7; */
+  opacity: 0.3;
+  background-image: linear-gradient(186deg, #4299EA 0%, #D4E6F7 100%);
+  z-index: -1;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.header .skew .header-inner {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo a {
+  color: #291A0A;
+  text-decoration: none;
+}
+
+
+.button {
+  background-color: #1F4E7A; /* Green */
+  border: none;
+  color: #D4E6F7;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2%;
+  font-size: 26px;
+  margin: 4px 100px;
+  cursor: pointer;
+  min-width: max-content;
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* body {
+    background: green;
+    overflow:hidden;
+  } */
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  body {
+    background: #FAF5F0;
+    overflow:hidden;
+  }
+  .header .skew:before { 
+    transform: skewY(-12deg);
+  }
+  .download {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin-top: 114%;
+    position: inherit;
+    justify-self: center;
+  }
+
+  .hero {
+    position: fixed;
+    bottom: 50%;
+    top: 17%;
+  }
+  
+ }
