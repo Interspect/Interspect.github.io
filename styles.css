@@ -67,10 +67,10 @@ body {
 }
 
 
-some-page-wrapper {
+.description-wrapper {
   display: flex;
   margin: 15px;
-  background-color: red;
+  justify-content: space-between;
 }
 
 .row {
